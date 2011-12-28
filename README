@@ -14,7 +14,7 @@ $form->output();
 OUTPUTS
 
 <form action="email.php" method="post" name="contact_form">
-  <div>
+	<div>
 		<label for="contact_form-full_name">Your name</label>
 		<input type="text" name="full_name" value="" id="contact_form-full_name"  />
 	</div>
