@@ -1,0 +1,28 @@
+/* Form class */
+
+This class makes making html forms way quicker, easier and more intuitive.
+
+An example for outputting a form would be:
+
+THE PHP CODE
+$form = new Form('contact_form', 'email.php');
+$form->input('text', 'full_name', '', 'Your name');
+$form->textarea('comments', 'Type a comment here');
+$form->input('submit', 'send_button', 'Send message');
+$form->output();
+
+OUTPUTS
+
+<form action="email.php" method="post" name="contact_form">
+  <div>
+		<label for="contact_form-full_name">Your name</label>
+		<input type="text" name="full_name" value="" id="contact_form-full_name"  />
+	</div>
+	<div>
+		<label for="contact_form-comments">Comments</label>
+		<textarea name="comments" id="contact_form-comments" >Type a comment here</textarea>
+	</div>
+	<div>
+		<input type="submit" name="send_button" value="Send message" id="contact_form-send_button"  />
+	</div>
+</form>
